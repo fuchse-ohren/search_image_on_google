@@ -13,8 +13,8 @@ browser.contextMenus.onClicked.addListener(function(info,tab) {
 		console.log(tab)
         var newTabParams = {
             url: "https://lens.google.com/uploadbyurl?url=" + encodeURI(info.srcUrl),
-            active: true
-            index: tab.index + 1; // Thanks for theo1996.
+            active: true,
+            index: tab.index + 1 // Thanks for theo1996.
         };
     }
     var creating = browser.tabs.create(newTabParams);
